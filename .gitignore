@@ -1,6 +1,8 @@
 *.log
 engine-ai/venv/
 venv/
+engine-ai/presensi_log/*
+!engine-ai/presensi_log/.gitkeepgit rm -r --cached engine-ai/presensi_log
 node_modules/
 __pycache__/
 *.pyc
