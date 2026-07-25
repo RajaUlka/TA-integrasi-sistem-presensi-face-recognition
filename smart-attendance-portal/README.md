@@ -444,4 +444,4 @@ Indonesia
 
 # Admin account
 id= admin
-password =
+password =admin123
