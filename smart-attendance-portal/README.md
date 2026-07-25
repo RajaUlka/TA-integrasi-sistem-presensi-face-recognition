@@ -1,4 +1,5 @@
 # 🎓 Integrated Smart Attendance System
+# Scroll down to the **Admin Account** section for the login credentials
 
 ## Integration of an E-Learning Attendance System Using a Microservice Architecture Based on Camera and Face Recognition
 
@@ -410,6 +411,15 @@ JSON Response
 
 This pipeline improves recognition accuracy while reducing spoofing attempts using printed photographs or static images.
 
+# 📸 Screenshots
+
+| Feature | Preview |
+|----------|---------|
+| Landing Page | *(Add Screenshot)* |
+| Attendance Page | *(Add Screenshot)* |
+| Face Registration | *(Add Screenshot)* |
+| Admin Dashboard | *(Add Screenshot)* |
+
 
 # ⚠️ Notes
 
@@ -432,3 +442,6 @@ Politeknik Negeri Batam
 
 Indonesia
 
+# Admin account
+id= admin
+password = admin123
