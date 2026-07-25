@@ -9,6 +9,7 @@ import os
 import json
 import logging
 import time
+import requests
 from datetime import datetime
 
 # Matikan log bawaan DeepFace
@@ -133,7 +134,19 @@ def verify_face():
             
             cursor.execute(sql, val)
             db.commit()
-
+            try:
+                # Sesuaikan URL ini dengan port running Laravel-mu (misal localhost:8000 atau localhost/nama_project)
+                laravel_url = "http://localhost:8000/api/moodle-sync" 
+                payload = {
+                    "nim": best_match_nim,
+                    "status_kehadiran": status_kehadiran
+                }
+                # Kirim data secara real-time ke Laravel
+                requests.post(laravel_url, json=payload, timeout=3)
+                print(f"🚀 Berhasil memicu Integration Service (Laravel) untuk sinkronisasi NIM {best_match_nim} ke Moodle!")
+            except Exception as e:
+                print("⚠️ Gagal terhubung ke Laravel:", str(e))
+                
             return jsonify({
                 "status": "success",
                 "message": f"Presensi Berhasil",
