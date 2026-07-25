@@ -13,10 +13,35 @@ Route::get('/dashboard', [PresensiController::class, 'index']);
 Route::get('/jalankan-python', [PresensiController::class, 'jalankanPython'])->name('jalankan.python');
 Route::get('/login', function() { return "Halaman Login Belum Dibuat"; })->name('login');
 
+
 Route::get('/scan', [PresensiController::class, 'scan'])->name('scan');
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+Route::get('/test-moodle', function () {
+    $url = env('MOODLE_URL');
+    $token = env('MOODLE_TOKEN');
+
+    // Data user dummy yang seolah-olah dikirim dari sistem AI
+    $response = \Illuminate\Support\Facades\Http::asForm()->post($url, [
+        'wstoken' => $token,
+        'wsfunction' => 'core_user_create_users',
+        'moodlewsrestformat' => 'json',
+        'users' => [
+            [
+                'username' => 'mahasiswa_ai',
+                'password' => 'MhsAI123!', 
+                'firstname' => 'Budi',
+                'lastname' => 'Presensi AI',
+                'email' => 'budi.ai@example.com',
+            ]
+        ]
+    ]);
+
+    return $response->json();
+});
 
 
 // --- ROUTE ADMIN (DIKUNCI PAKAI SESSION) ---
@@ -47,4 +72,4 @@ Route::group([
     
     // API untuk ambil data matkul otomatis
     Route::get('/matakuliah/api/{kode}', [AdminController::class, 'getMatakuliahApi']);
-});
+});  
