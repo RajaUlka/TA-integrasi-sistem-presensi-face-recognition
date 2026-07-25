@@ -1,5 +1,4 @@
 # 🎓 Integrated Smart Attendance System
-# Scroll down to the **Admin Account** section for the login credentials
 
 ## Integration of an E-Learning Attendance System Using a Microservice Architecture Based on Camera and Face Recognition
 
@@ -11,6 +10,7 @@
 ![Moodle](https://img.shields.io/badge/Moodle-LMS-F98012?logo=moodle&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+Scroll down to the **Admin Account** section for the login credentials
 ---
 
 ## 📖 Project Overview
@@ -444,4 +444,4 @@ Indonesia
 
 # Admin account
 id= admin
-password = admin123
+password =
