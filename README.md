@@ -10,6 +10,7 @@
 ![Moodle](https://img.shields.io/badge/Moodle-LMS-F98012?logo=moodle&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+Scroll down to the **Admin Account** section for the login credentials
 ---
 
 ## 📖 Project Overview
@@ -411,6 +412,7 @@ JSON Response
 This pipeline improves recognition accuracy while reducing spoofing attempts using printed photographs or static images.
 
 
+
 # ⚠️ Notes
 
 - The AI Engine must be running before attendance can be performed.
@@ -432,3 +434,6 @@ Politeknik Negeri Batam
 
 Indonesia
 
+# Admin account
+id= admin
+password =admin123
