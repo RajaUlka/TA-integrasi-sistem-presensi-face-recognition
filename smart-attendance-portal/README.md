@@ -411,14 +411,6 @@ JSON Response
 
 This pipeline improves recognition accuracy while reducing spoofing attempts using printed photographs or static images.
 
-# 📸 Screenshots
-
-| Feature | Preview |
-|----------|---------|
-| Landing Page | *(Add Screenshot)* |
-| Attendance Page | *(Add Screenshot)* |
-| Face Registration | *(Add Screenshot)* |
-| Admin Dashboard | *(Add Screenshot)* |
 
 
 # ⚠️ Notes
